@@ -12,16 +12,23 @@ body {
 header {
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  /* top: 0;
+  left: 0; */
+  z-index: 1;
   align-items: center;
   background-color: #ffc017;
   padding: 20px;
   /* position: fixed; */
+  border-bottom: 1px solid black;
+  transition: background-color 0.5s;
 }
 
 header .logo {
   font-size: 24px;
   font-weight: bold;
-  margin-left: 7%;
+  margin-left: 10%;
 }
 
 header nav ul {
@@ -51,18 +58,27 @@ header nav ul li button {
   border-radius: 2em;
 }
 
+header nav {
+  padding-right: 10%;
+}
+
+#navbar.scrolled {
+  background-color: white;
+}
+
 .hero {
   background-color: #ffc017;
   text-align: start;
-  padding: 50px 20px;
+  padding: 90px 20px;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-  height: 43vh;
+  height: 55vh;
 }
 
 .hero h1 {
   font-size: 75px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding-top: 0.5em;
 }
 
 .hero p {
@@ -88,7 +104,8 @@ header nav ul li button {
 
 .trending {
   /* border: 1px solid black; */
-  padding: 20px;
+  padding-bottom: 20px;
+  /* width: 100%; */
   margin-left: 7%;
   margin-right: 7%;
 }
@@ -168,17 +185,15 @@ header nav ul li button {
 }
 
 .articles {
-  padding: 50px;
-  margin-top: 2em;
-  border-top: 1px solid rgb(223, 221, 221);
-}
+  /* margin-top: 2em; */
 
-.articles article {
-  padding: 20px 0;
+  flex: 3;
+  margin-right: 100px;
 }
 
 .articles article h3 {
   margin: 0;
+  max-width: 450px;
 }
 
 .articles article p {
@@ -186,15 +201,19 @@ header nav ul li button {
 }
 
 footer {
-  background-color: #f8f8f8;
-  padding: 20px;
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  border-top: 1px solid rgb(214, 210, 210);
+  padding-top: 20px;
+  text-align: justify;
 }
 
 footer .footer-links a {
   text-decoration: none;
   color: black;
   margin: 0 10px;
+  line-height: 30px;
 }
 
 .svg {
@@ -219,15 +238,18 @@ footer .footer-links a {
 }
 
 .tArticle {
-  max-width: 500px;
+  width: 450px;
   padding: 10px 0;
   color: gray;
 }
 
 .pArticle {
-  display: block;
-  width: 200px;
-  margin-right: 45%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: auto;
 }
 
 .bookmark {
@@ -238,13 +260,14 @@ footer .footer-links a {
 
 .articleContent {
   display: flex;
-  align-items: center;
-  margin-left: 7%;
-  margin-bottom: 1em;
+  /* border-bottom: 1px solid black; */
+  padding-bottom: 20px;
+  /* margin-left: 7%; */
+  margin-bottom: 20px;
 }
 
 .articleContentIn {
-  flex: 1;
+  flex: 2;
 }
 
 .tagg {
@@ -253,4 +276,46 @@ footer .footer-links a {
   cursor: pointer;
   padding: 4px;
   border-radius: 2em;
+}
+
+.divided {
+  display: flex;
+  max-width: 50% auto;
+  /* margin: 10%; */
+  margin-top: 3%;
+  padding: 0 8%;
+  padding-top: 3%;
+  gap: 3em;
+  border-top: 1px solid rgb(210, 209, 209);
+}
+
+.sidebar {
+  top: 20px;
+  /* right: 20px; */
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left h1 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.button {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.button button {
+  cursor: pointer;
+}
+
+.button button {
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9em;
 }
