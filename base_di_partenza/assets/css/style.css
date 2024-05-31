@@ -1,0 +1,256 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffc017;
+  padding: 20px;
+  /* position: fixed; */
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 7%;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a,
+header nav ul li button {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  border-radius: 2em;
+}
+
+header nav ul li button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 2em;
+}
+
+.hero {
+  background-color: #ffc017;
+  text-align: start;
+  padding: 50px 20px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  height: 43vh;
+}
+
+.hero h1 {
+  font-size: 75px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.hero p {
+  font-size: 20px;
+  margin: 25px 0;
+  max-width: 360px;
+}
+
+#secHeader {
+  margin-left: 7%;
+}
+
+.hero .start-reading {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+  width: 180px;
+}
+
+.trending {
+  /* border: 1px solid black; */
+  padding: 20px;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+.trending h2 {
+  font-size: 20px;
+  /* margin-top: 2em; */
+  /* margin-left: 2%; */
+}
+
+.trending .trending-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.trending .trending-items article {
+  display: flex;
+
+  padding: 20px;
+
+  width: 32%;
+  align-items: center;
+}
+
+.trending .trending-items .trend-number {
+  /* display: flex;
+  justify-content: flex-start; */
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 20px;
+  color: rgb(200, 200, 200);
+}
+
+.trending .trending-items .trend-content h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 0.5em;
+}
+
+.trending .trending-items .trend-content p {
+  margin: 5px 0;
+}
+
+.trending .trending-items .trend-content {
+  flex: 1;
+}
+
+.nContent {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1em;
+  align-items: center;
+  color: black;
+}
+
+.icon1 {
+  border-radius: 11px;
+  width: 30px;
+  height: 30px;
+}
+
+.icon2 {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.trending .trending-items .trend-content p {
+  color: gray;
+}
+
+.trending .trending-items .trend-content .pName {
+  color: black;
+  font-weight: bold;
+}
+
+.articles {
+  padding: 50px;
+  margin-top: 2em;
+  border-top: 1px solid rgb(223, 221, 221);
+}
+
+.articles article {
+  padding: 20px 0;
+}
+
+.articles article h3 {
+  margin: 0;
+}
+
+.articles article p {
+  margin: 5px 0;
+}
+
+footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .footer-links a {
+  text-decoration: none;
+  color: black;
+  margin: 0 10px;
+}
+
+.svg {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: gray;
+}
+
+.svg2 {
+  margin-top: 2.5em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 1.5em;
+  /* margin-bottom: -1.5em; */
+}
+
+.articles h3 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.tArticle {
+  max-width: 500px;
+  padding: 10px 0;
+  color: gray;
+}
+
+.pArticle {
+  display: block;
+  width: 200px;
+  margin-right: 45%;
+}
+
+.bookmark {
+  margin-top: 7em;
+  margin-right: 1em;
+  cursor: pointer;
+}
+
+.articleContent {
+  display: flex;
+  align-items: center;
+  margin-left: 7%;
+  margin-bottom: 1em;
+}
+
+.articleContentIn {
+  flex: 1;
+}
+
+.tagg {
+  border: 1px solid rgb(224, 224, 224);
+  background-color: rgb(224, 224, 224);
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 2em;
+}
